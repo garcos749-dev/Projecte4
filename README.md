@@ -102,4 +102,9 @@ En acabar el projecte, l’alumne haurà lliurat:
 * Tauler Kanban complet i actualitzat.
 * Reflexió en clau de sostenibilitat i economia circular.
 
+  # Tascas
+
+![Tasca01](./T01/README.md)
+  
+
 ---
