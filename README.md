@@ -104,7 +104,7 @@ En acabar el projecte, l’alumne haurà lliurat:
 
   # Tascas
 
-![Tasca01](./T01/README.md)
+![Tasca01](./T01/readme.md)
   
 
 ---
