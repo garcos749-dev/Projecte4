@@ -105,27 +105,45 @@ En acabar el projecte, l’alumne haurà lliurat:
   # Tascas
 
 ![Tasca01](./T01/readme.md)
+
 ![Tasca02](./T02/readme.md)
+
 ![Tasca03](./T03/readme.md)
+
 ![Tasca04](./T04/readme.md)
+
 ![Tasca05](./T05/readme.md)
+
 ![Tasca06](./T06/readme.md)
+
 ![Tasca07](./T07/readme.md)
+
 ![Tasca08](./T08/readme.md)
+
 ![Tasca09](./T09/readme.md)
+
 ![Tasca010](./T10/readme.md)
+
 ![Tasca011](./T11/readme.md)
+
 ![Tasca012](./T12/readme.md)
+
 ![Tasca013](./T13/readme.md)
+
 ![Tasca014](./T14/readme.md)
+
 ![Tasca015](./T15/readme.md)
 
  # Productes 
 
  ![Producte01](./P01/readme.md)
+
  ![Producte02](./P02/readme.md)
+ 
  ![Producte03](./P03/readme.md)
+ 
  ![Producte04](./P04/readme.md)
+ 
  ![Producte05](./P05/readme.md)
 
   
