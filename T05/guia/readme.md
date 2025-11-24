@@ -12,7 +12,7 @@ systemctl start ssh    # només si estava aturat
 ```
 
 👉 **Aquí va aquesta foto:**
-`![imatge](img/foto1.png)` → (Aquesta és la foto de l’estat del servei SSH)
+![imatge](img/foto1.png) → (Aquesta és la foto de l’estat del servei SSH)
 
 ---
 
@@ -25,7 +25,7 @@ ip addr show
 ```
 
 👉 **Aquí va aquesta foto:**
-`![imatge](img/foto2.png)`
+![imatge](img/foto2.png)
 *(La foto que mostra la IP, la que en el document original era “img/1.png”)*
 
 ---
@@ -41,10 +41,10 @@ ssh usuari@192.168.56.101
 👉 **Aquí van dues fotos:**
 
 1. **Confirmació del fingerprint (yes)**
-   `![imatge](img/foto3.png)` *(abans era img/3.png)*
+   ![imatge](img/foto3.png) *(abans era img/3.png)*
 
 2. **Entrada de la contrasenya**
-   `![imatge](img/foto4.png)` *(abans era img/4.png)*
+   ![imatge](img/foto4.png) *(abans era img/4.png)*
 
 ---
 
@@ -57,7 +57,7 @@ sudo nano /etc/ssh/sshd_config
 ```
 
 👉 **Aquí va aquesta foto:**
-`![imatge](img/foto6.png)`
+![imatge](img/foto5.png)
 *(La foto on es veu l’arxiu sshd_config editat per permetre root — abans img/6.png)*
 
 ### **Opcional: habilitar login root**
@@ -69,7 +69,7 @@ passwd root
 ```
 
 👉 **Aquí va aquesta foto:**
-`![imatge](img/foto5.png)` *(abans img/5.png)*
+![imatge](img/foto6.png) *(abans img/5.png)*
 
 ---
 
@@ -82,7 +82,7 @@ sudo nano /etc/ssh/sshd_config
 ```
 
 👉 **Aquí va aquesta foto:**
-`![imatge](img/foto8.png)`
+![imatge](img/foto7.png)
 *(Configuració que bloqueja root i usuari2 — abans img/8.png)*
 
 ### Crear usuari nou
@@ -94,7 +94,7 @@ passwd usuari2
 ```
 
 👉 **Aquí va aquesta foto:**
-`![imatge](img/foto9.png)` *(abans img/9.png)*
+![imatge](img/foto8.png) *(abans img/9.png)*
 
 ### Provar que usuari2 NO pot fer SSH
 
@@ -105,7 +105,7 @@ ssh usuari2@192.168.56.101
 ```
 
 👉 **Aquí va aquesta foto:**
-`![imatge](img/foto10.png)` *(abans img/10.png)*
+![imatge](img/foto9.png) *(abans img/10.png)*
 
 ### Provar que root tampoc pot fer SSH
 
@@ -116,7 +116,7 @@ ssh root@192.168.56.101
 ```
 
 👉 **Aquí va aquesta foto:**
-`![imatge](img/foto11.png)` *(abans img/11.png)*
+![imatge](img/foto10.png) *(abans img/11.png)*
 
 ### Però root sí pot iniciar sessió local
 
@@ -127,12 +127,12 @@ login root
 ```
 
 👉 **Aquesta foto:**
-`![imatge](img/foto12.png)` *(abans img/12.png)*
+![imatge](img/foto11.png) *(abans img/12.png)*
 
 ### Provar SSH amb l’usuari permès
 
 👉 **Aquesta foto va just després:**
-`![imatge](img/foto13.png)` *(abans img/13.png)*
+![imatge](img/foto12.png) *(abans img/13.png)*
 
 ---
 
@@ -147,7 +147,7 @@ ssh-keygen -t rsa
 ```
 
 👉 **Aquí va aquesta foto:**
-`![imatge](img/foto14.png)` *(abans img/14.png)*
+![imatge](img/foto13.png) *(abans img/14.png)*
 
 ### Veure el directori `.ssh`
 
@@ -158,7 +158,7 @@ ls C:\Users\cfgm2smxb19\.ssh
 ```
 
 👉 **Aquí va aquesta foto:**
-`![imatge](img/foto15.png)` *(abans img/15.png)*
+![imatge](img/foto14.png) *(abans img/15.png)*
 
 ### Copiar la clau pública al servidor
 
@@ -169,7 +169,7 @@ scp C:\Users\cfgm2smxb19\.ssh\id_rsa.pub usuari@192.168.56.101:
 ```
 
 👉 **Aquí va aquesta foto:**
-`![imatge](img/foto16.png)` *(abans img/16.png)*
+![imatge](img/foto15.png) *(abans img/16.png)*
 
 ---
 
