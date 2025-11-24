@@ -1,117 +1,175 @@
-# **Guia d’instal·lació SSH per Linux i Windows**
+# 📌 Ubicació de totes les fotos
 
 ## **1. SSH a Linux (Ubuntu)**
 
-### **Actualitzar sistema**
-
-```bash
-sudo apt update && sudo apt upgrade -y
-```
-
-### **Instal·lar SSH (si no està instal·lat)**
-
-```bash
-sudo apt install ssh
-```
-
 ### **Comprovar i activar el servei**
+
+Després d’aquest bloc:
 
 ```bash
 systemctl status ssh
 systemctl start ssh    # només si estava aturat
 ```
 
+👉 **Aquí va aquesta foto:**
+`![imatge](img/foto1.png)` → (Aquesta és la foto de l’estat del servei SSH)
+
+---
+
 ### **Obtenir la IP**
+
+Després d’aquest bloc:
 
 ```bash
 ip addr show
 ```
 
+👉 **Aquí va aquesta foto:**
+`![imatge](img/foto2.png)`
+*(La foto que mostra la IP, la que en el document original era “img/1.png”)*
+
 ---
 
 ## **2. Connexió des de Windows a Linux per SSH**
 
-A Windows, obre PowerShell i escriu:
+Després de:
 
 ```bash
 ssh usuari@192.168.56.101
 ```
 
-Accepta la connexió escrivint **yes** i introdueix la contrasenya.
+👉 **Aquí van dues fotos:**
+
+1. **Confirmació del fingerprint (yes)**
+   `![imatge](img/foto3.png)` *(abans era img/3.png)*
+
+2. **Entrada de la contrasenya**
+   `![imatge](img/foto4.png)` *(abans era img/4.png)*
 
 ---
 
 ## **3. Editar la configuració de SSH**
 
-Obre el fitxer:
+Després de:
 
 ```bash
 sudo nano /etc/ssh/sshd_config
 ```
 
-### **Opcional: habilitar login del root**
+👉 **Aquí va aquesta foto:**
+`![imatge](img/foto6.png)`
+*(La foto on es veu l’arxiu sshd_config editat per permetre root — abans img/6.png)*
 
-(Per fer proves)
+### **Opcional: habilitar login root**
+
+Després de:
 
 ```bash
 passwd root
-systemctl restart ssh
-ssh root@192.168.56.101
 ```
+
+👉 **Aquí va aquesta foto:**
+`![imatge](img/foto5.png)` *(abans img/5.png)*
 
 ---
 
-## **4. Seguretat: deshabilitar root per SSH i limitar usuaris**
+## **4. Seguretat: deshabilitar root i limitar usuaris**
 
-Torna a editar:
+Després d’aquest segon cop que obres l’arxiu:
 
 ```bash
 sudo nano /etc/ssh/sshd_config
 ```
 
-Configura perquè **root NO pugui fer SSH** i **només un usuari concret hi tingui accés**.
+👉 **Aquí va aquesta foto:**
+`![imatge](img/foto8.png)`
+*(Configuració que bloqueja root i usuari2 — abans img/8.png)*
 
-### Crear usuari nou (per proves)
+### Crear usuari nou
+
+Després de:
 
 ```bash
-useradd -m -s /bin/bash usuari2
 passwd usuari2
 ```
 
-Comprova que **usuari2 no pot fer SSH** si així ho has configurat.
+👉 **Aquí va aquesta foto:**
+`![imatge](img/foto9.png)` *(abans img/9.png)*
 
-Comprova també que **root no pot fer SSH** però **sí pot iniciar sessió en local**:
+### Provar que usuari2 NO pot fer SSH
+
+Després de:
+
+```bash
+ssh usuari2@192.168.56.101
+```
+
+👉 **Aquí va aquesta foto:**
+`![imatge](img/foto10.png)` *(abans img/10.png)*
+
+### Provar que root tampoc pot fer SSH
+
+Després de:
+
+```bash
+ssh root@192.168.56.101
+```
+
+👉 **Aquí va aquesta foto:**
+`![imatge](img/foto11.png)` *(abans img/11.png)*
+
+### Però root sí pot iniciar sessió local
+
+Després de:
 
 ```bash
 login root
 ```
 
+👉 **Aquesta foto:**
+`![imatge](img/foto12.png)` *(abans img/12.png)*
+
+### Provar SSH amb l’usuari permès
+
+👉 **Aquesta foto va just després:**
+`![imatge](img/foto13.png)` *(abans img/13.png)*
+
 ---
 
-## **5. Accedir per certificat (clau pública) en lloc de contrasenya**
+## **5. Accedir per certificat**
 
-### Generar la clau des de Windows (PowerShell)
+### Generar la clau amb ssh-keygen
+
+Després de:
 
 ```bash
 ssh-keygen -t rsa
 ```
 
-Prem *Enter* fins acabar.
+👉 **Aquí va aquesta foto:**
+`![imatge](img/foto14.png)` *(abans img/14.png)*
 
-### Veure el directori de les claus
+### Veure el directori `.ssh`
 
-```bash
+Després de:
+
+```powershell
 ls C:\Users\cfgm2smxb19\.ssh
 ```
 
-### Copiar la clau pública al servidor Linux
+👉 **Aquí va aquesta foto:**
+`![imatge](img/foto15.png)` *(abans img/15.png)*
 
-```bash
+### Copiar la clau pública al servidor
+
+Després de:
+
+```powershell
 scp C:\Users\cfgm2smxb19\.ssh\id_rsa.pub usuari@192.168.56.101:
 ```
 
-A partir d’aquí continuaràs amb la configuració a Windows.
+👉 **Aquí va aquesta foto:**
+`![imatge](img/foto16.png)` *(abans img/16.png)*
 
 ---
-
 
