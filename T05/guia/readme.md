@@ -229,11 +229,7 @@ ssh nom_windows@IP_windows
 
 ## **Crear un túnel com el de la guia**
 
-Exemple (modifica segons la pràctica):
 
-```bash
-ssh -L 8080:localhost:80 nom_windows@IP_windows
-```
 ![imatge](../img/foto29.png)
 
 ---
