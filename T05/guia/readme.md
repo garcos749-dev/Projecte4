@@ -236,6 +236,12 @@ ssh nom_windows@IP_windows
 
 ## **Configuració del túnel *proxy* a Windows**
 
-(Configura’l segons els paràmetres del túnel creat.)
+![imatge](../img/foto30.png)
+![imatge](../img/foto31.png)
+![imatge](../img/foto32.png)
+![imatge](../img/foto33.png)
+![imatge](../img/foto34.png)
+![imatge](../img/foto35.png)
+![imatge](../img/foto36.png)
 
 ---
