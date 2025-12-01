@@ -131,10 +131,9 @@ scp id_rsa.pub nom_ubuntu@IP_ubuntu:/home/nom_ubuntu/
 A Ubuntu:
 
 ```bash
-mkdir -p ~/.ssh
 touch ~/.ssh/authorized_keys
 cat ~/id_rsa.pub >> ~/.ssh/authorized_keys
-chmod 600 ~/.ssh/authorized_keys
+
 ```
 ![imatge](../img/foto13.png)
 
