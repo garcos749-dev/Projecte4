@@ -236,12 +236,33 @@ ssh nom_windows@IP_windows
 
 ## **Configuració del túnel *proxy* a Windows**
 
+1. Obrim el **Panell de control**.
+
 ![imatge](../img/foto30.png)
+
+2. Entrem a **Xarxa i Internet**.
+
 ![imatge](../img/foto31.png)
+
+3. Seleccionem **Opcions d'Internet**.
+
 ![imatge](../img/foto32.png)
+
+4. Anem a la pestanya **Configuració**.
+
 ![imatge](../img/foto33.png)
+
+5. A l’apartat **Servidor proxy**, activem la casella **Detectar la configuració automàticament**.
+6. Marquem el quadrat de **Configuració del proxy**.
+
 ![imatge](../img/foto34.png)
+
+7. Introduïm la informació que apareix a la imatge.
+
 ![imatge](../img/foto35.png)
+
+8. Aquí podem veure el tràfic.
+
 ![imatge](../img/foto36.png)
 
 ---
