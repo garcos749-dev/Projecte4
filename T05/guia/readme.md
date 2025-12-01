@@ -178,7 +178,7 @@ Ja no hauria de demanar contrasenya.
 
 A PowerShell (com administrador):
 
-![imatge](../img/foto20.png)
+![imatge](../img/foto23.png)
 
 powershell
 Set-Service -Name sshd -StartupType Automatic
@@ -195,6 +195,8 @@ Desactivar firewall (per a la pràctica):
 ```
 Firewall i protecció de xarxa → Xarxa pública → Desactivar
 ```
+![imatge](../img/foto20.png)
+
 ![imatge](../img/foto21.png)
 
 ![imatge](../img/foto22.png)
