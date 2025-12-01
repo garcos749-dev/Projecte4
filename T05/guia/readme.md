@@ -114,10 +114,10 @@ ssh-keygen -t rsa -b 4096
 
 Apareixen dos fitxers, per exemple:
 
-![imatge](../img/foto11.png)
-
 * `id_rsa`
 * `id_rsa.pub`  ← **aquest és el que hem de copiar a Ubuntu**
+
+![imatge](../img/foto11.png)
 
 ### 2. Copiar la clau pública a Ubuntu
 
