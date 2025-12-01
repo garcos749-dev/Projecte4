@@ -80,7 +80,6 @@ Reiniciem el servei SSH:
 ```bash
 sudo systemctl restart ssh
 ```
-![imatge](../img/foto8.png)
 
 ---
 
@@ -91,6 +90,7 @@ Login local a Ubuntu:
 ```bash
 su -
 ```
+![imatge](../img/foto8.png)
 
 Des de Windows:
 
