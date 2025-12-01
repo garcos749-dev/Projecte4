@@ -1,6 +1,6 @@
 Después entramos al netplan y editamos:
 
-  ![imatge](img/foto1.png)
+  ![imatge](../img/foto1.png)
 
 
 
