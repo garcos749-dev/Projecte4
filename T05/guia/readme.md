@@ -177,6 +177,7 @@ Ja no hauria de demanar contrasenya.
 ## **Activar el servei OpenSSH a Windows**
 
 A PowerShell (com administrador):
+
 ![imatge](../img/foto20.png)
 
 powershell
@@ -184,6 +185,7 @@ Set-Service -Name sshd -StartupType Automatic
 Start-Service sshd
 
 ![imatge](../img/foto24.png)
+
 ![imatge](../img/foto25.png)
 
 
@@ -194,6 +196,7 @@ Desactivar firewall (per a la pràctica):
 Firewall i protecció de xarxa → Xarxa pública → Desactivar
 ```
 ![imatge](../img/foto21.png)
+
 ![imatge](../img/foto22.png)
 
 
