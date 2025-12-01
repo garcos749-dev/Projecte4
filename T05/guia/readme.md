@@ -151,18 +151,26 @@ Ja no hauria de demanar contrasenya.
 ## **Configurar el servidor OpenSSH a Windows 11**
 
 1. Obrir **Configuració** → **Sistema**
+
    ![imatge](../img/foto15.png)
 
-3. Entrar a **Característiques opcionals**
-   ![imatge](../img/foto16.png)
 
-5. Clicar **Veure característiques disponibles**
-   ![imatge](../img/foto17.png)
+2. Entrar a **Característiques opcionals**
 
-7. Buscar **OpenSSH Server**
-   ![imatge](../img/foto18.png)
+    ![imatge](../img/foto16.png)
 
-9. Marcar-lo i fer *Afegir*
+
+3. Clicar **Veure característiques disponibles**
+
+    ![imatge](../img/foto17.png)
+
+
+4. Buscar **OpenSSH Server**
+
+    ![imatge](../img/foto18.png)
+
+
+5. Marcar-lo i fer *Afegir*
 
 ---
 
