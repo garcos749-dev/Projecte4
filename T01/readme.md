@@ -43,6 +43,8 @@ Després, els alumnes han de treballar els diferents aspectes del tema mitjança
 
 # **Fase 1: Treball Individual**
 
+![Part1](./Part1/readme.md)
+
 Cada alumne ha de respondre les preguntes següents basant-se en el cas pràctic:
 
 1. **Què copiar? (Priorització):**  
@@ -60,6 +62,8 @@ Cada alumne ha de respondre les preguntes següents basant-se en el cas pràctic
 ---
 
 # **Fase 2: Treball per Parelles**
+![Part2](./Part2/readme.md)
+
 
 Treballant en parelles:
 
@@ -82,6 +86,8 @@ Treballant en parelles:
 ---
 
 # **Fase 3: Treball en Grup**
+![Part3](./Part3/readme.md)
+
 
 1. **Debat i Selecció:**  
    Cada parella presenta el seu esquema.  
