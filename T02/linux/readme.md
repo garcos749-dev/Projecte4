@@ -93,6 +93,9 @@ Automatització amb scripts i cron (captures del procés).
 
 ![imatge](../img/foto39.png)
 
+![imatge](../img/foto40.png)
+
+
 
 
 
@@ -109,5 +112,5 @@ Obrim el arxiu de crontab per posar las tascas que volem que cron executi Permis
 
 ![imatge](../img/foto37.png)
 
-![imatge](../img/foto42.png)
+![imatge](../img/foto41.png)
 
