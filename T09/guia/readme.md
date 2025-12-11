@@ -7,15 +7,11 @@ Afegim els grups **admins** i **devs**.
 
 Creem l’usuari **dev01** i l’assignem al grup **devs**, amb el directori personal i **bash** com a shell per defecte.  
 
-![FOTO 2](../img/foto2.png)
+![FOTO 4](../img/foto4.png)
 
 Creem l’usuari **admin01** i l’assignem al grup **admins**, amb el seu directori personal i shell **bash** per defecte.  
 
 ![FOTO 3](../img/foto3.png)
-
-Comprovem que els usuaris i grups s’han creat correctament.  
-
-![FOTO 4](../img/foto4.png)
 
 Creem els directoris **admin_tools** i **dev_projects**.  
 
