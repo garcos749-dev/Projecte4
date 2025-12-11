@@ -13,21 +13,21 @@ Afegim l’usuari **admin01** i l’assignem al grup admins.
 
 
 
-![FOTO 2](../img/foto2.png)
+![FOTO 2](../img/foto3.png)
 
 
 Afegim l’usuari **dev01** i l’assignem al grup devs.
 
 
 
-![FOTO 3](../img/foto3.png)
+![FOTO 3](../img/foto4.png)
 
 
 Verifiquem que els usuaris han estat creats.
 
 
 
-![FOTO 4](../img/foto4.png)
+![FOTO 4](../img/foto2.png)
 
 
 Verifiquem que els grups existeixen.
