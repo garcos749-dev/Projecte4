@@ -1,68 +1,84 @@
 # Part 2 — Còpia de seguretat a Linux amb Duplicity + cron
+Objectiu: implementar còpies completes i incrementals de /home en un volum auxiliar muntat manualment a /media/backup, mostrant-ho amb captures i sense comandos en el text.
 
-**Objectiu:** configurar còpies completes i incrementals del directori */home* en un volum auxiliar muntat manualment a */media/backup*, mostrant-ho amb captures però **sense incloure comandos en el text**.
+Seqüència de la prova de concepte
+Preparació de la unitat de backup (10 GB): detectar el disc, formatejar en XFS, crear punt de muntatge.
+![imatge](../img/foto20.png)
 
-## Seqüència de la prova de concepte
+Formatar XFS Crear punt de muntatge
+![imatge](../img/foto21.png)
 
-### Preparació del dispositiu de backup (10 GB): detecció, formatació en XFS i creació del punt de muntatge.
+Es defineix el sistema de fitxers i el punt de muntatge per a la unitat auxiliar.
 
-Formatació XFS i creació del punt de muntatge
+Muntatge manual a /media/backup.
+![imatge](../img/foto22.png)
 
-S’estableix el sistema de fitxers i s’habilita el directori on es muntarà la unitat externa.
 
-Muntatge manual a */media/backup*.
+Crear usuaris.
+![imatge](../img/foto23.png)
 
-Volum muntat correctament.
 
-### Creació d’usuaris.
+El volum queda disponible per rebre còpies de seguretat.
 
-Es deixa el volum llest per rebre les còpies de seguretat.
+Instal·lació de Duplicity.
 
-### Instal·lació de Duplicity.
+Instal·lar duplicity
+![imatge](../img/foto24.png)
 
-Instal·lació de duplicity
+Instal·lació de l'eina de còpia per entorns Linux.
 
-S’incorpora l’eina encarregada de gestionar les còpies en sistemes Linux.
+Preparar dades de prova: crear usuaris addicionals i fitxers de 10 MB en home.
+![imatge](../img/foto25.png)
 
-### Preparació del material de prova: afegir nous usuaris i generar fitxers de 10 MB dins *home*.
+Crear fitxers de prova
 
-Creació de fitxers de prova
+Creem usuaris i contingut per validar les còpies.
 
-Es generen comptes i dades per comprovar la funcionalitat del backup.
+Fer una còpia completa de /home cap a la unitat de backup.
+![imatge](../img/foto26.png)
+![imatge](../img/foto27.png)
 
-### Realitzar una còpia completa de */home* cap al dispositiu de backup.
 
-Còpia completa de */home* i comprovació del contingut guardat
+Backup complet /home Verificar contingut backup
 
-### Validació de la restauració: eliminació i recuperació de fitxers.
+Verificar restauració: esborrar i restaurar fitxers.
+![imatge](../img/foto28.png)
+![imatge](../img/foto29.png)
 
-Esborrat de fitxers i restauració completa
 
-Es reprodueix una situació de pèrdua de dades i es comprova que la recuperació funciona.
+Esborrar fitxers Restore complet
 
-### Execució d’una còpia incremental després d’afegir un fitxer d’uns 4 MB.
+Es simula una pèrdua de dades i es verifica la recuperació.
 
-Creació del fitxer nou, còpia incremental i revisió de versions
+Fer una còpia incremental després d'afegir un fitxer de ~4 MB.
+![imatge](../img/foto30.png)
+![imatge](../img/foto31.png)
+![imatge](../img/foto32.png)
 
-S’introdueix una modificació petita i es genera una còpia incremental per analitzar els canvis.
 
-### Desmuntatge del volum de backup.
+Crear nou fitxer Backup incremental Comprovació versions
 
-Desconnexió del dispositiu
+Es genera un canvi menor i s'executa una còpia incremental per observar diferències.
 
-El volum es desmunta per garantir la seva seguretat.
+Desmuntar la unitat de backup.
+![imatge](../img/foto33.png)
 
-### Automatització mitjançant scripts i cron (amb captures del procés).
+Desmuntar
 
-Creació dels scripts i assignació de permisos Permisos d’execució
+La unitat queda desconnectada per seguretat.
 
-S’obre el fitxer de *crontab* per programar les tasques que cron haurà d’executar.
-Permisos d’execució i programació de la còpia incremental.
+Automatització amb scripts i cron (captures del procés).
 
----
+Creem els scripts i donem permisos Permisos execució Permisos execució Permisos execució Permisos execució
 
-Si vols, també puc:
-✅ simplificar-lo més
-✅ traduir-lo
-✅ adaptar-lo a un format d’informe formal
-Només digues què prefereixes!
+![imatge](../img/foto34.png)
+![imatge](../img/foto35.png)
+![imatge](../img/foto36.png)
+![imatge](../img/foto37.png)
+
+
+Obrim el arxiu de crontab per posar las tascas que volem que cron executi Permisos execució Cron incremental
+
+![imatge](../img/foto38.png)
+![imatge](../img/foto39.png)
+
