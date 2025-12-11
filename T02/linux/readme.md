@@ -1,61 +1,68 @@
 # Part 2 — Còpia de seguretat a Linux amb Duplicity + cron
-Objectiu: implementar còpies completes i incrementals de /home en un volum auxiliar muntat manualment a /media/backup, mostrant-ho amb captures i sense comandos en el text.
 
-Seqüència de la prova de concepte
-Preparació de la unitat de backup (10 GB): detectar el disc, formatejar en XFS, crear punt de muntatge.
+**Objectiu:** configurar còpies completes i incrementals del directori */home* en un volum auxiliar muntat manualment a */media/backup*, mostrant-ho amb captures però **sense incloure comandos en el text**.
 
-Formatar XFS Crear punt de muntatge
+## Seqüència de la prova de concepte
 
-Es defineix el sistema de fitxers i el punt de muntatge per a la unitat auxiliar.
+### Preparació del dispositiu de backup (10 GB): detecció, formatació en XFS i creació del punt de muntatge.
 
-Muntatge manual a /media/backup.
+Formatació XFS i creació del punt de muntatge
 
-Muntar volum Volum muntat
+S’estableix el sistema de fitxers i s’habilita el directori on es muntarà la unitat externa.
 
-Crear usuaris.
+Muntatge manual a */media/backup*.
 
-Muntar volum
+Volum muntat correctament.
 
-El volum queda disponible per rebre còpies de seguretat.
+### Creació d’usuaris.
 
-Instal·lació de Duplicity.
+Es deixa el volum llest per rebre les còpies de seguretat.
 
-Instal·lar duplicity
+### Instal·lació de Duplicity.
 
-Instal·lació de l'eina de còpia per entorns Linux.
+Instal·lació de duplicity
 
-Preparar dades de prova: crear usuaris addicionals i fitxers de 10 MB en home.
+S’incorpora l’eina encarregada de gestionar les còpies en sistemes Linux.
 
-Crear fitxers de prova
+### Preparació del material de prova: afegir nous usuaris i generar fitxers de 10 MB dins *home*.
 
-Creem usuaris i contingut per validar les còpies.
+Creació de fitxers de prova
 
-Fer una còpia completa de /home cap a la unitat de backup.
+Es generen comptes i dades per comprovar la funcionalitat del backup.
 
-Backup complet /home Verificar contingut backup
+### Realitzar una còpia completa de */home* cap al dispositiu de backup.
 
-Verificar restauració: esborrar i restaurar fitxers.
+Còpia completa de */home* i comprovació del contingut guardat
 
-Esborrar fitxers Restore complet
+### Validació de la restauració: eliminació i recuperació de fitxers.
 
-Es simula una pèrdua de dades i es verifica la recuperació.
+Esborrat de fitxers i restauració completa
 
-Fer una còpia incremental després d'afegir un fitxer de ~4 MB.
+Es reprodueix una situació de pèrdua de dades i es comprova que la recuperació funciona.
 
-Crear nou fitxer Backup incremental Comprovació versions
+### Execució d’una còpia incremental després d’afegir un fitxer d’uns 4 MB.
 
-Es genera un canvi menor i s'executa una còpia incremental per observar diferències.
+Creació del fitxer nou, còpia incremental i revisió de versions
 
-Desmuntar la unitat de backup.
+S’introdueix una modificació petita i es genera una còpia incremental per analitzar els canvis.
 
-Desmuntar
+### Desmuntatge del volum de backup.
 
-La unitat queda desconnectada per seguretat.
+Desconnexió del dispositiu
 
-Automatització amb scripts i cron (captures del procés).
+El volum es desmunta per garantir la seva seguretat.
 
-Creem els scripts i donem permisos Permisos execució Permisos execució Permisos execució Permisos execució
+### Automatització mitjançant scripts i cron (amb captures del procés).
 
-Obrim el arxiu de crontab per posar las tascas que volem que cron executi Permisos execució Cron incremental
+Creació dels scripts i assignació de permisos Permisos d’execució
 
+S’obre el fitxer de *crontab* per programar les tasques que cron haurà d’executar.
+Permisos d’execució i programació de la còpia incremental.
 
+---
+
+Si vols, també puc:
+✅ simplificar-lo més
+✅ traduir-lo
+✅ adaptar-lo a un format d’informe formal
+Només digues què prefereixes!
