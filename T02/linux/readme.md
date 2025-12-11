@@ -20,6 +20,8 @@ Muntatge manual a /media/backup.
 
 Crear usuaris.
 
+![imatge](../img/foto25.png)
+
 
 
 El volum queda disponible per rebre còpies de seguretat.
@@ -34,7 +36,7 @@ Instal·lació de l'eina de còpia per entorns Linux.
 
 Preparar dades de prova: crear usuaris addicionals i fitxers de 10 MB en home.
 
-![imatge](../img/foto25.png)
+![imatge](../img/foto26.png)
 
 Crear fitxers de prova
 
@@ -42,18 +44,18 @@ Creem usuaris i contingut per validar les còpies.
 
 Fer una còpia completa de /home cap a la unitat de backup.
 
-![imatge](../img/foto26.png)
-
 ![imatge](../img/foto27.png)
+
+![imatge](../img/foto28.png)
 
 
 Backup complet /home Verificar contingut backup
 
 Verificar restauració: esborrar i restaurar fitxers.
 
-![imatge](../img/foto28.png)
-
 ![imatge](../img/foto29.png)
+
+![imatge](../img/foto30.png)
 
 
 Esborrar fitxers Restore complet
@@ -62,11 +64,12 @@ Es simula una pèrdua de dades i es verifica la recuperació.
 
 Fer una còpia incremental després d'afegir un fitxer de ~4 MB.
 
-![imatge](../img/foto30.png)
-
 ![imatge](../img/foto31.png)
 
 ![imatge](../img/foto32.png)
+
+![imatge](../img/foto33.png)
+
 
 
 Crear nou fitxer Backup incremental Comprovació versions
@@ -75,7 +78,8 @@ Es genera un canvi menor i s'executa una còpia incremental per observar diferè
 
 Desmuntar la unitat de backup.
 
-![imatge](../img/foto33.png)
+![imatge](../img/foto34.png)
+
 
 Desmuntar
 
@@ -83,21 +87,27 @@ La unitat queda desconnectada per seguretat.
 
 Automatització amb scripts i cron (captures del procés).
 
-Creem els scripts i donem permisos Permisos execució Permisos execució Permisos execució Permisos execució
-
-
-![imatge](../img/foto34.png)
-
 ![imatge](../img/foto35.png)
 
 ![imatge](../img/foto36.png)
 
-![imatge](../img/foto37.png)
+![imatge](../img/foto39.png)
+
+
+
+
+
+
+Creem els scripts i donem permisos Permisos execució Permisos execució Permisos execució Permisos execució
+
+
+
+
 
 
 Obrim el arxiu de crontab per posar las tascas que volem que cron executi Permisos execució Cron incremental
 
-![imatge](../img/foto38.png)
+![imatge](../img/foto37.png)
 
-![imatge](../img/foto39.png)
+![imatge](../img/foto42.png)
 
