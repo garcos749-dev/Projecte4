@@ -16,10 +16,10 @@ Muntatge manual a /media/backup.
 
 ![imatge](../img/foto22.png)
 
+![imatge](../img/foto23.png)
 
 Crear usuaris.
 
-![imatge](../img/foto23.png)
 
 
 El volum queda disponible per rebre còpies de seguretat.
