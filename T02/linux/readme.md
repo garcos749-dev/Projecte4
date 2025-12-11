@@ -1,12 +1,12 @@
 # Part 2 — Còpia de seguretat a Linux amb Duplicity + cron
-Objectiu: implementar còpies completes i incrementals de /home en un volum auxiliar muntat manualment a /media/backup, mostrant-ho amb captures i sense comandos en el text.
+Objectiu: configurar còpies completes i incrementals del directori /home en un volum extern muntat manualment a /media/backup. La documentació ha d’incloure les captures de pantalla de cada etapa, i el text no ha de contenir comandos.
 
 Seqüència de la prova de concepte
-Preparació de la unitat de backup (10 GB): detectar el disc, formatejar en XFS, crear punt de muntatge.
+Preparació de la unitat de còpia (10 GB): detecció del disc, formatació a XFS i creació del punt de muntatge.
 
 ![imatge](../img/foto20.png)
 
-Formatar XFS Crear punt de muntatge
+Formatació en XFS i habilitació del punt de muntatge
 
 ![imatge](../img/foto21.png)
 
@@ -34,11 +34,11 @@ Instal·lar duplicity
 
 Instal·lació de l'eina de còpia per entorns Linux.
 
-Preparar dades de prova: crear usuaris addicionals i fitxers de 10 MB en home.
+Preparació de dades de prova: creació d’usuaris addicionals i generació de fitxers de 10 MB dins de /home
 
 ![imatge](../img/foto26.png)
 
-Crear fitxers de prova
+Fitxers de prova creats
 
 Creem usuaris i contingut per validar les còpies.
 
@@ -51,7 +51,7 @@ Fer una còpia completa de /home cap a la unitat de backup.
 
 Backup complet /home Verificar contingut backup
 
-Verificar restauració: esborrar i restaurar fitxers.
+Validació de la restauració: eliminació i recuperació de fitxers
 
 ![imatge](../img/foto29.png)
 
@@ -88,7 +88,8 @@ La unitat queda desconnectada per seguretat.
 Automatització amb scripts i cron (captures del procés).
 
 
-Creem els scripts i donem permisos Permisos execució Permisos execució Permisos execució Permisos execució
+Creació dels scripts i assignació de permiso
+Es generen els scripts necessaris i se’ls dóna permís d’execució.
 
 ![imatge](../img/foto35.png)
 
@@ -99,7 +100,8 @@ Creem els scripts i donem permisos Permisos execució Permisos execució Permiso
 ![imatge](../img/foto40.png)
 
 
-Obrim el arxiu de crontab per posar las tascas que volem que cron executi Permisos execució Cron incremental
+Edició del fitxer crontab per programar les tasques
+S’incorporen les ordres de còpia programada, incloent-hi la incremental.
 
 ![imatge](../img/foto37.png)
 
