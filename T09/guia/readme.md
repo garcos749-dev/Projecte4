@@ -27,7 +27,7 @@ Instal·lem el servidor **NFS** (`nfs-kernel-server`).
 
 Definim els recursos compartits en `/etc/exports`.  
 
-![FOTO 8](../img/foto8.png)
+![FOTO 6](../img/foto6.png)
 
 Comprovem l’estat del servei **nfs-kernel-server**.  
 
