@@ -1,4 +1,4 @@
-Part 1: Còpia seguretat dels equips clients Windows
+# Part 1: Còpia seguretat dels equips clients Windows
 
 Primer de tot ens descarregarem google per poder installar-nos el Duplicati
 ![imatge](../img/foto1.png)
