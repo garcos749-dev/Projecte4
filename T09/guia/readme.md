@@ -1,404 +1,150 @@
-# Guia completa amb espais per a les fotos (45 fotos)
-
-## 1. Creació de grups i usuaris
-
-Afegim els grups **admins** i **devs**.
+# Guia de configuració NFS i gestió d’usuaris
 
 
+Afegim els grups **admins** i **devs**.  
 
 ![FOTO 1](../img/foto1.png)
 
+Creem l’usuari **dev01** i l’assignem al grup **devs**, amb el directori personal i **bash** com a shell per defecte.  
 
-Afegim l’usuari **admin01** i l’assignem al grup admins.
+![FOTO 2](../img/foto2.png)
 
+Creem l’usuari **admin01** i l’assignem al grup **admins**, amb el seu directori personal i shell **bash** per defecte.  
 
+![FOTO 3](../img/foto3.png)
 
-![FOTO 2](../img/foto3.png)
+Comprovem que els usuaris i grups s’han creat correctament.  
 
+![FOTO 4](../img/foto4.png)
 
-Afegim l’usuari **dev01** i l’assignem al grup devs.
-
-
-
-![FOTO 3](../img/foto4.png)
-
-
-Verifiquem que els usuaris han estat creats.
-
-
-
-![FOTO 4](../img/foto2.png)
-
-
-Verifiquem que els grups existeixen.
-
-
+Creem els directoris **admin_tools** i **dev_projects**.  
 
 ![FOTO 5](../img/foto5.png)
 
-
----
-
-## 2. Creació i configuració de directoris
-
-Creem les carpetes:
-
-* **admin_tools**
-* **dev_projects**
-
-
+Assignem la propietat dels directoris a **root** i el grup corresponent a **admins** o **devs**.  
 
 ![FOTO 6](../img/foto6.png)
 
-
-Assignem **root** com a propietari dels directoris.
-
-
+Instal·lem el servidor **NFS** (`nfs-kernel-server`).  
 
 ![FOTO 7](../img/foto7.png)
 
-
-Assignem els grups **admins** i **devs**.
-
-
+Definim els recursos compartits en `/etc/exports`.  
 
 ![FOTO 8](../img/foto8.png)
 
-
-Comprovem permisos.
-
-
+Comprovem l’estat del servei **nfs-kernel-server**.  
 
 ![FOTO 9](../img/foto9.png)
 
-
----
-
-## 3. Instal·lació i configuració de NFS al servidor
-
-Instal·lem:
-
-
-apt install nfs-kernel-server
-
-
-
+Verifiquem que els **exports** s’han creat amb `exportfs -u`.  
 
 ![FOTO 10](../img/foto10.png)
 
-
-Editem **/etc/exports**.
-
-
+Comprovem que els usuaris i els grups s’han creat correctament.  
 
 ![FOTO 11](../img/foto11.png)
 
+---
 
-Afegim els recursos inicials.
-
-
+Al **client Zorin**, instal·lem **Users and Groups** per poder gestionar els usuaris.  
 
 ![FOTO 12](../img/foto12.png)
 
-
-Reiniciem el servei.
-
-
+Creem els mateixos usuaris i grups amb les mateixes IPs que al servidor.  
 
 ![FOTO 13](../img/foto13.png)
 
+---
 
-Comprovem l’estat del servei:
-
-
-systemctl status nfs-kernel-server
-
-
-
+Creem un arxiu de prova amb contingut des del servidor al recurs compartit `admin_tools/`.  
 
 ![FOTO 14](../img/foto14.png)
 
+---
 
-Verifiquem els exports:
-
-
-exportfs -u
-
-
-
+Actualitzem els repositoris de Zorin.  
 
 ![FOTO 15](../img/foto15.png)
 
-
----
-
-## 4. Configuració del client Zorin OS
-
-Instal·lem *Users and Groups*.
-
-
+Instal·lem `nfs-common`.  
 
 ![FOTO 16](../img/foto16.png)
 
-
-Creem els mateixos grups que al servidor.
-
-
+Fem `showmount -e <IP_SERVER>` des del client Zorin per veure els recursos compartits disponibles.  
 
 ![FOTO 17](../img/foto17.png)
 
-
-Creem els usuaris equivalents.
-
-
+Creem la carpeta de muntatge: `/mnt/admin_tools`.  
 
 ![FOTO 18](../img/foto18.png)
 
-
----
-
-## 5. Prova inicial de recurs compartit
-
-Creem un fitxer de prova a **admin_tools/** des del servidor.
-
-
+Muntem el recurs compartit a la carpeta que acabem de crear.  
 
 ![FOTO 19](../img/foto19.png)
 
-
-Comprovem que el fitxer existeix.
-
-
+Intentem crear un arxiu com a **root**; no ens deixa, així que afegirem l’opció **no_root_squash**.  
 
 ![FOTO 20](../img/foto20.png)
 
-
----
-
-## 6. Preparació del client Zorin
-
-Actualitzem i instal·lem NFS:
-
-
-apt update
-apt install nfs-common
-
-
-
+Afegim el paràmetre `no_root_squash` als **exports**.  
 
 ![FOTO 21](../img/foto21.png)
 
-
-Mostrem els recursos exportats:
-
-
-showmount -e <IP_SERVER>
-
-
-
+Ara tornem a provar de crear un arxiu i ja ens deixa, ja que estem actuant com a root en el recurs compartit gràcies a `no_root_squash`.  
 
 ![FOTO 22](../img/foto22.png)
 
+---
 
-Creem el punt de muntatge:
+Modifiquem `/etc/exports` al servidor per ajustar el recurs `dev_projects`:  
 
-
-mkdir /mnt/admin_tools
-
-
-
+* La xarxa **192.168.56.0** tindrà permisos d’escriptura (RW).  
+* L’altra xarxa **192.168.56.105** només podrà llegir (RO).  
 
 ![FOTO 23](../img/foto23.png)
 
-
-Muntem el recurs:
-
-
-mount <IP_SERVER>:/admin_tools /mnt/admin_tools
-
-
-
+Reiniciem el servei i comprovem que s’inicialitza correctament.  
 
 ![FOTO 24](../img/foto24.png)
 
-
-Intentem crear un fitxer com a root (fallada).
-
-
+Creem la carpeta per muntar el nou recurs `dev_projects` i la muntem.  
 
 ![FOTO 25](../img/foto25.png)
 
-
 ---
 
-## 7. Afegim **no_root_squash**
-
-Modifiquem **/etc/exports**:
-
-
-no_root_squash
-
-
-
+Com a usuari **dev01**, intentem crear un arxiu; ens hauria de deixar.  
 
 ![FOTO 26](../img/foto26.png)
 
-
-Reiniciem NFS:
-
-
+Confirmem que efectivament es crea. Ara canviem la IP per verificar si només es permet llegir.  
 
 ![FOTO 27](../img/foto27.png)
 
-
-Tornem a provar:
-
-
+Comprovem que tenim la IP correcta.  
 
 ![FOTO 28](../img/foto28.png)
 
-
----
-
-## 8. Configuració de permisos per xarxa (dev_projects)
-
-Modifiquem **/etc/exports**:
-
-* 192.168.56.0 → RW
-* 192.168.56.105 → RO
-
-
+Tornem a muntar el recurs.  
 
 ![FOTO 29](../img/foto29.png)
 
-
-Reiniciem:
-
-
+Ara, amb el mateix usuari **dev01**, provem d’escriure a un arxiu; no hauria de deixar i efectivament no deixa.  
 
 ![FOTO 30](../img/foto30.png)
 
-
-Creem /mnt/dev_projects:
-
-
+Comprovem que amb l’usuari **admin** tampoc es pot escriure.  
 
 ![FOTO 31](../img/foto31.png)
 
+---
 
-Muntem el recurs:
-
-
+Configurem el fitxer `/etc/fstab` per fer que els recursos es muntin automàticament en iniciar sessió, evitant haver de muntar-los manualment.  
 
 ![FOTO 32](../img/foto32.png)
 
-
----
-
-## 9. Proves d’escriptura segons xarxa
-
-Amb **dev01**, provem de crear un fitxer:
-
-
-
-![FOTO 33](../img/foto33.png)
-
-
-Confirmem que s’ha creat.
-
-
-
-![FOTO 34](../img/foto34.png)
-
-
-Canviem la IP:
-
-
-
-![FOTO 35](../img/foto35.png)
-
-
-Tornem a muntar:
-
-
-
-![FOTO 36](../img/foto36.png)
-
-
-Provem d’escriure:
-
-
-
-![FOTO 37](../img/foto37.png)
-
-
-Amb admin tampoc podem escriure.
-
-
-
-![FOTO 38](../img/foto38.png)
-
-
-Comprovem que podem llegir.
-
-
-
-![FOTO 39](../img/foto39.png)
-
-
----
-
-## 10. Automuntatge amb /etc/fstab
-
-Editem el fitxer:
-
-
-
-![FOTO 40](../img/foto40.png)
-
-
 Reiniciem el daemon:
 
-
+```bash
 systemctl daemon-reload
-
-
-
-
-![FOTO 41](../img/foto41.png)
-
-
-Fem:
-
-
-mount -a
-
-
-
-
-![FOTO 42](../img/foto42.png)
-
-Comprovem que està muntat:
-
-
-
-![FOTO 43](../img/foto43.png)
-
-
-Reiniciem el sistema:
-
-
-
-![FOTO 44](../img/foto44.png)
-
-
-Comprovem que el muntatge és automàtic:
-
-
-
-![FOTO 45](../img/foto45.png)
-
-
----
-
-
