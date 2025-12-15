@@ -52,6 +52,7 @@ Per a connectar-nos des de la màquina Zorin a la màquina Windows, utilitzem l'
 Aquí introduïm la IP de la màquina Windows
 
 ![imatge](../img/foto11.png)
+
 Ens sortira una advertencia i li donarem a Si.
 
 ![imatge](../img/foto12.png)
