@@ -90,40 +90,39 @@ Tornem a muntar i provem de crear un arxiu com a root de nou.
 
 Modifiquem el fitxer /etc/exports per al recurs dev_projects: la xarxa 192.168.56.0 amb permisos d’escriptura i la IP 192.168.56.105 només amb permisos de lectura.
 
-![imatge](./img/foto.png)
-
+![imatge](./img/foto36.png)
 
 Reiniciem el servei i comprovem que arrenca correctament.
 
+![imatge](./img/foto31.png)
 
 Creem la carpeta de muntatge per dev_projects i la muntem.
 
-![imatge](./img/foto.png)
+![imatge](./img/foto32.png)
 
 Com a usuari dev01, provem de crear un fitxer (hauria de ser possible a la xarxa amb permisos d’escriptura).
 
-![imatge](./img/foto.png)
+![imatge](./img/foto33.png)
 
 Canviem la IP per comprovar accés de només lectura.
 
-![imatge](./img/foto31.png)
-![imatge](./img/foto32.png)
-
-Tornem a muntar el recurs.
-
-![imatge](./img/foto33.png)
-
-Com a usuari dev01, provem d’escriure en un fitxer (no hauria de ser permès) i ho confirmem.
-
 ![imatge](./img/foto34.png)
-
-Amb admin tampoc ha de permetre l'escriptura.
 
 ![imatge](./img/foto35.png)
 
+
+Tornem a muntar el recurs.
+
+
+Com a usuari dev01, provem d’escriure en un fitxer (no hauria de ser permès) i ho confirmem.
+
+
+Amb admin tampoc ha de permetre l'escriptura.
+
+
 5. Muntatge automàtic amb /etc/fstab
 Configurem el fitxer /etc/fstab perquè els recursos es muntin automàticament a l’inici del sistema.
-![imatge](./img/foto36.png)
+
 
 
 
