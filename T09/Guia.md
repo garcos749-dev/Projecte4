@@ -47,44 +47,47 @@ Repliquem els usuaris i grups amb les mateixes UIDs i GIDs que al servidor.
 ![imatge](./img/foto14.png)
 ![imatge](./img/foto15.png)
 ![imatge](./img/foto17.png)
-
-Al servidor, creem un fitxer de prova dins del recurs compartit.
 ![imatge](./img/foto18.png)
-
-Actualitzem repositoris a Zorin.
-
 ![imatge](./img/foto19.png)
 
-Instal·lem nfs-common al client.
+
+
+Al servidor, creem un fitxer de prova dins del recurs compartit.
 
 ![imatge](./img/foto20.png)
 
-Llistem els recursos compartits del servidor amb showmount -e.
+Actualitzem repositoris a Zorin.
 
 ![imatge](./img/foto21.png)
-Creem la carpeta de muntatge 
+
+Instal·lem nfs-common al client.
+
 ![imatge](./img/foto22.png)
 
-Muntem el recurs compartit en la carpeta creada.
-
+Llistem els recursos compartits del servidor amb showmount -e.
 ![imatge](./img/foto23.png)
 
-4. Proves de permisos i ajustos d'exports
-Intentem crear un fitxer com a root des del client; si no és possible, cal afegir no_root_squash al fitxer /etc/exports.
+Creem la carpeta de muntatge 
 
 ![imatge](./img/foto24.png)
 
-Afegim el paràmetre no_root_squash al fitxer /etc/exports i apliquem els canvis.
+Muntem el recurs compartit en la carpeta creada.
+
+4. Proves de permisos i ajustos d'exports
+
+Intentem crear un fitxer com a root des del client; si no és possible, cal afegir no_root_squash al fitxer /etc/exports.
 
 ![imatge](./img/foto25.png)
 
+Afegim el paràmetre no_root_squash al fitxer /etc/exports i apliquem els canvis.
+![imatge](./img/foto27.png)
+
 Tornem a muntar i provem de crear un arxiu com a root de nou.
 
-![imatge](./img/foto26.png)
+![imatge](./img/foto.png)
 
 Modifiquem el fitxer /etc/exports per al recurs dev_projects: la xarxa 192.168.56.0 amb permisos d’escriptura i la IP 192.168.56.105 només amb permisos de lectura.
 
-![imatge](./img/foto27.png)
 
 Reiniciem el servei i comprovem que arrenca correctament.
 
@@ -118,6 +121,7 @@ Amb admin tampoc ha de permetre l'escriptura.
 5. Muntatge automàtic amb /etc/fstab
 Configurem el fitxer /etc/fstab perquè els recursos es muntin automàticament a l’inici del sistema.
 ![imatge](./img/foto36.png)
+
 
 
 
