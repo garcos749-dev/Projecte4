@@ -21,6 +21,7 @@ Assignem el propietari i el grup a les carpetes (usuari root i grup admins o dev
 
 # 2. Configuració del servei NFS al servidor
 Instal·lem NFS 
+
 ![imatge](./img/foto50.png)
 
 Definim els recursos que es volen compartir al fitxer /etc/exports.
@@ -44,14 +45,14 @@ Verifiquem que els usuaris i els grups s’han creat correctament.
 Instal·lem l’eina “Users and Groups” per gestionar els usuaris localment.
 
 ![imatge](./img/foto13.png)
+
 Repliquem els usuaris i grups amb les mateixes UIDs i GIDs que al servidor.
+
 ![imatge](./img/foto14.png)
 ![imatge](./img/foto15.png)
 ![imatge](./img/foto17.png)
 ![imatge](./img/foto18.png)
 ![imatge](./img/foto19.png)
-
-
 
 Al servidor, creem un fitxer de prova dins del recurs compartit.
 
@@ -66,6 +67,7 @@ Instal·lem nfs-common al client.
 ![imatge](./img/foto22.png)
 
 Llistem els recursos compartits del servidor amb showmount -e.
+
 ![imatge](./img/foto23.png)
 
 Creem la carpeta de muntatge 
@@ -83,6 +85,7 @@ Intentem crear un fitxer com a root des del client; si no és possible, cal afeg
 ![imatge](./img/foto29.png)
 
 Afegim el paràmetre no_root_squash al fitxer /etc/exports i apliquem els canvis.
+
 ![imatge](./img/foto27.png)
 
 Tornem a muntar i provem de crear un arxiu com a root de nou.
@@ -144,6 +147,7 @@ Verifiquem que els recursos estan muntats; reiniciem per provar muntatge automà
 Després del reinici, comprovem que tot segueix muntat correctament.
 
 ![imatge](./img/foto45.png)
+
 
 
 
