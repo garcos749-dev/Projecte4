@@ -11,6 +11,7 @@ Un cop a dins activem l'opció que ens surt.
 ![imatge](../img/foto2.png)
 
 Un cop activada ja ens podrem conectar desde la màquina Zorin.
+
 --- 
 # Configuració de la màquina Zorin
 
