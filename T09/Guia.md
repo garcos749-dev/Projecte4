@@ -1,7 +1,8 @@
 # T09: Guia NFS — Configuració d'usuaris, permisos i recursos compartits
+
 Aquest document explica, pas a pas i de manera senzilla, com configurar un servidor NFS i un client Zorin, com gestionar usuaris i grups, posar permisos i muntar els recursos compartits.
 
-1. Preparació de grups i usuaris al servidor
+# 1. Preparació de grups i usuaris al servidor
 
 ![imatge](./img/foto1.png)
 
@@ -18,7 +19,7 @@ Assignem el propietari i el grup a les carpetes (usuari root i grup admins o dev
 
 ![imatge](./img/foto6.png)
 
-2. Configuració del servei NFS al servidor
+# 2. Configuració del servei NFS al servidor
 Instal·lem NFS 
 ![imatge](./img/foto50.png)
 
@@ -38,7 +39,7 @@ Verifiquem que els usuaris i els grups s’han creat correctament.
 
 ![imatge](./img/foto12.png)
 
-3. Preparació al client Zorin
+# 3. Preparació al client Zorin
 
 Instal·lem l’eina “Users and Groups” per gestionar els usuaris localment.
 
@@ -75,7 +76,7 @@ Muntem el recurs compartit en la carpeta creada.
 
 ![imatge](./img/foto28.png)
 
-4. Proves de permisos i ajustos d'exports
+# 4. Proves de permisos i ajustos d'exports
 
 Intentem crear un fitxer com a root des del client; si no és possible, cal afegir no_root_squash al fitxer /etc/exports.
 
@@ -120,10 +121,27 @@ Com a usuari dev01, provem d’escriure en un fitxer (no hauria de ser permès) 
 Amb admin tampoc ha de permetre l'escriptura.
 
 
-5. Muntatge automàtic amb /etc/fstab
+# 5. Muntatge automàtic amb /etc/fstab
+
 Configurem el fitxer /etc/fstab perquè els recursos es muntin automàticament a l’inici del sistema.
 
+![imatge](./img/foto41.png)
 
+Reiniciem el daemon de muntatge.
+
+![imatge](./img/foto42.png)
+
+Executem mount -a abans de reiniciar per validar que no hi ha errors.
+
+![imatge](./img/foto43.png)
+
+Verifiquem que els recursos estan muntats; reiniciem per provar muntatge automàtic.
+
+![imatge](./img/foto44.png)
+
+Després del reinici, comprovem que tot segueix muntat correctament.
+
+![imatge](./img/foto45.png)
 
 
 
