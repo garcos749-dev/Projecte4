@@ -111,15 +111,16 @@ Canviem la IP per comprovar accés de només lectura.
 
 ![imatge](./img/foto35.png)
 
-
 Tornem a muntar el recurs.
 
 
 Com a usuari dev01, provem d’escriure en un fitxer (no hauria de ser permès) i ho confirmem.
 
+![imatge](./img/foto39.png)
 
 Amb admin tampoc ha de permetre l'escriptura.
 
+![imatge](./img/foto40.png)
 
 # 5. Muntatge automàtic amb /etc/fstab
 
@@ -142,6 +143,7 @@ Verifiquem que els recursos estan muntats; reiniciem per provar muntatge automà
 Després del reinici, comprovem que tot segueix muntat correctament.
 
 ![imatge](./img/foto45.png)
+
 
 
 
