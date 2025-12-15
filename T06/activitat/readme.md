@@ -5,7 +5,7 @@ Primer de tot tindrem que cambiar la configuració de la xarxa a les dues màqui
 ![imatge](../img/foto1.png)
 
 # Configuració de la màquina Windows
-Despres en la màquina windows busquem configuració d'escriptori remot.
+Desprès en la màquina windows busquem configuració d'escriptori remot.
 Un cop a dins activem l'opció que ens surt.
 
 ![imatge](../img/foto2.png)
