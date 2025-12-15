@@ -113,6 +113,7 @@ Canviem la IP per comprovar accés de només lectura.
 
 Tornem a muntar el recurs.
 
+![imatge](./img/foto90.png)
 
 Com a usuari dev01, provem d’escriure en un fitxer (no hauria de ser permès) i ho confirmem.
 
@@ -143,6 +144,7 @@ Verifiquem que els recursos estan muntats; reiniciem per provar muntatge automà
 Després del reinici, comprovem que tot segueix muntat correctament.
 
 ![imatge](./img/foto45.png)
+
 
 
 
