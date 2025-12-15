@@ -46,7 +46,6 @@ Instal·lem l’eina “Users and Groups” per gestionar els usuaris localment.
 Repliquem els usuaris i grups amb les mateixes UIDs i GIDs que al servidor.
 ![imatge](./img/foto14.png)
 ![imatge](./img/foto15.png)
-![imatge](./img/foto16.png)
 ![imatge](./img/foto17.png)
 
 Al servidor, creem un fitxer de prova dins del recurs compartit.
@@ -119,6 +118,7 @@ Amb admin tampoc ha de permetre l'escriptura.
 5. Muntatge automàtic amb /etc/fstab
 Configurem el fitxer /etc/fstab perquè els recursos es muntin automàticament a l’inici del sistema.
 ![imatge](./img/foto36.png)
+
 
 
 
