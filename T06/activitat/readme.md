@@ -1,1 +1,16 @@
+![imatge](../img/foto1.png)
+![imatge](../img/foto2.png)
+![imatge](../img/foto3.png)
+![imatge](../img/foto4.png)
+![imatge](../img/foto5.png)
+![imatge](../img/foto6.png)
+![imatge](../img/foto7.png)
+![imatge](../img/foto8.png)
+![imatge](../img/foto9.png)
+![imatge](../img/foto10.png)
+![imatge](../img/foto11.png)
+![imatge](../img/foto12.png)
+![imatge](../img/foto13.png)
+![imatge](../img/foto14.png)
+
 
