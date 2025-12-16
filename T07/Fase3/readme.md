@@ -10,12 +10,12 @@ Un cop el tecnic a introduit el codi en el seu PC et sortira aquesta finestra i 
 
 Si volem introduir contraseña anirem a la configuracrio d’enydesk i dins de l’apartat acesso introduirem la contraseña un cop fet i el tecnic es vulgui conectar tindre que ficar-la.
 
-![imatge](../img/foto2.png)
+![imatge](../img/foto15.png)
 
 
 Punt de vista tecnic.
 
-![imatge](../img/foto2.png)
+![imatge](../img/foto16.png)
 
 
 
