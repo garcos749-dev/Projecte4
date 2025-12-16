@@ -1,4 +1,4 @@
-# **T07: Accés remot — Serveis d’assistència remota**
+# **T07: Accés remot — Serveis d’assistència remota** (Javier i Oscar)
 
 ## **Versió estil “punt 8”**
 
