@@ -113,4 +113,6 @@
 3. [https://www.genbeta.com/herramientas/chrome-remote-desktop-que-como-funciona-como-puedes-usarlo-para-controlar-tu-pc-forma-remota](https://www.genbeta.com/herramientas/chrome-remote-desktop-que-como-funciona-como-puedes-usarlo-para-controlar-tu-pc-forma-remota)
 
 ---
-![Fase1](../Fase1/readme.md)
+![Fase1](./Fase1/readme.md)
+![Fase2](./Fase2/readme.md)
+
