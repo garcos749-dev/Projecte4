@@ -1,1 +1,49 @@
+# **Fase 2**  
+
+Descargar anydesk per el sistema que desitgem desde la web oficial  
+
+![imatge](../img/foto1.png)
+
+Per iniciar una sessió de suport remot només hem d'introduir el codi de l’usuari al qual ens volem connectar, li demanem que ens doni el codi 
+
+Foto client:  
+
+![imatge](../img/foto2.png)
+
+I l’introduïm en el nostre anydesk a la barra superior que posa enter remote address  
+
+![imatge](../img/foto3.png)
+
+Ara a nosaltres com a tècnic ens sortirà que estem esperant que el client ens accepti la connexió, li haurem de dir que ens l’accepti
+
+![imatge](../img/foto4.png)
+
+Punt de vista del client:  
+
+![imatge](../img/foto5.png)
+
+Ha de premer Aceptar  
+Quan el client hagi acceptat la connexió nosaltres ja tindrem accés remot a la seva màquina 
+
+![imatge](../img/foto6.png)
+
+# Transferir arxius:
+
+Per transferir arxius podrem obrir a la cantonada dreta superior de la pantalla un icona d’un arxiu amb una fletxa:  
+
+![imatge](../img/foto7.png)
+
+Se'ns obrirà dos exploradors d’arxius, un el del client i un el de la nostra màquina 
+
+![imatge](../img/foto8.png)
+
+Ara podem transferir qualsevol arxiu de l'equip remot (client) al nostre o al revés
+
+per fer-ho podem seleccionar qualsevol arxiu i donar-li a la fletxa  
+
+![imatge](../img/foto9.png)
+
+Una vegada li hàgim donat l'arxiu es transferirà i es notificarà tant al client com a nosaltres que l'operació s’ha completat 
+
+![imatge](../img/foto10.png)
 
