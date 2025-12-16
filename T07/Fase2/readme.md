@@ -1,4 +1,5 @@
-# **Fase 2**  
+# Fase 2 Creació de les Guies d'Ús (Documentació)
+
 
 Descargar anydesk per el sistema que desitgem desde la web oficial  
 
@@ -27,7 +28,7 @@ Quan el client hagi acceptat la connexió nosaltres ja tindrem accés remot a la
 
 ![imatge](../img/foto6.png)
 
-# Transferir arxius:
+Transferir arxius:
 
 Per transferir arxius podrem obrir a la cantonada dreta superior de la pantalla un icona d’un arxiu amb una fletxa:  
 ![imatge](../img/foto8.png)
@@ -36,9 +37,7 @@ Se'ns obrirà dos exploradors d’arxius, un el del client i un el de la nostra 
 
 ![imatge](../img/foto9.png)
 
-Ara podem transferir qualsevol arxiu de l'equip remot (client) al nostre o al revés
-
-per fer-ho podem seleccionar qualsevol arxiu i donar-li a la fletxa  
+Ara podem transferir qualsevol arxiu de l'equip remot (client) al nostre o al revés per fer-ho podem seleccionar qualsevol arxiu i donar-li a la fletxa  
 
 ![imatge](../img/foto10.png)
 
