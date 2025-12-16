@@ -58,8 +58,9 @@ Se'ns obrirà una sessió independent, això va bé per si hem de fer diverses s
 
 ![imatge](../img/foto14.png)
 
+---
 
-Guia Client 
+# Guia Client 
 
 Primer de tot un cop descarregada l’aplicacio ens sortira un codig que el compartirem amb el tecnic.
 
