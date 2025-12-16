@@ -30,20 +30,34 @@ Quan el client hagi acceptat la connexió nosaltres ja tindrem accés remot a la
 # Transferir arxius:
 
 Per transferir arxius podrem obrir a la cantonada dreta superior de la pantalla un icona d’un arxiu amb una fletxa:  
-
-![imatge](../img/foto7.png)
+![imatge](../img/foto8.png)
 
 Se'ns obrirà dos exploradors d’arxius, un el del client i un el de la nostra màquina 
 
-![imatge](../img/foto8.png)
+![imatge](../img/foto9.png)
 
 Ara podem transferir qualsevol arxiu de l'equip remot (client) al nostre o al revés
 
 per fer-ho podem seleccionar qualsevol arxiu i donar-li a la fletxa  
 
-![imatge](../img/foto9.png)
+![imatge](../img/foto10.png)
 
 Una vegada li hàgim donat l'arxiu es transferirà i es notificarà tant al client com a nosaltres que l'operació s’ha completat 
 
-![imatge](../img/foto10.png)
+![imatge](../img/foto11.png)
+
+Punt de vista Client 
+
+![imatge](../img/foto12.png)
+
+Per obrir una sessió independent podem pressionar CTRL + click a la icona de la pantalla amb un 1
+
+![imatge](../img/foto13.png)
+
+Se'ns obrirà una sessió independent, això va bé per si hem de fer diverses sessions a la vegada.
+
+![imatge](../img/foto14.png)
+
+
+
 
