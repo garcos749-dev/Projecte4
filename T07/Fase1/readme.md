@@ -47,5 +47,5 @@
    * Justificar la decisió segons: facilitat, funcionalitat, cost, experiència d’usuari i flexibilitat.
   ---
   
-  ![Fase2](./Fase2/readme.md)
+  ![Fase2](../Fase2/readme.md)
 
