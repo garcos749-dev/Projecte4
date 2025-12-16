@@ -1,4 +1,4 @@
-# Fase 2 Creació de les Guies d'Ús (Documentació)
+# Fase 2 Creació de les Guies d'Ús (Documentació) Javier i Oscar 
 
 
 Descargar anydesk per el sistema que desitgem desde la web oficial  
